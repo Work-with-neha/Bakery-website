@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Desret website</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+ display: flex;
+      flex-direction: column;
+       overflow-x: hidden;
+
+
+
+        }
+        header {
+            background-color: black;
+            color: #fff;
+            padding: 8px 10px;
+            text-align: center;
+		width: 100%;
+
+    boredr-radius: 10px;
+
+        }
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 12px 18px 18px;
+    background-color: chocolate;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	width: 100%;
+height: 8%;
+position: absolute;
+top: 7%;
+
+}
+
+.navbar .logo img {
+    height: 90px;
+width: 90px;
+border-radius: 40px;
+margin-left: 20px;
+
+
+}
+
+
+.navbar nav {
+             display: flex;
+            justify-content: flex-end;
+            width: 80%;
+	font-size: 11px;
+padding: 1px;
+border-radius: 30px;
+
+
+        }
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 3%;
+align-items: center;
+padding: 0px 12px 1px;
+}
+
+.navbar nav ul a:hover {
+    background-color: chocolate;
+	border-radius: 6px;
+}
+
+
+
+
+.navbar nav ul li {
+    margin: 0 10px;
+
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 5px 12px;
+ margin: 2px;
+    padding: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar nav ul li a:hover {
+    background-color: black;
+    color: blue;
+    border-radius: 4px;
+}
+
+.navbar .social-media a {
+    color: black;
+ 
+	 align-items: center;
+    margin: 0px 45xpx;
+  padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+height: 20px;
+
+
+
+}
+
+
+
+.navbar .social-media a:hover {
+    color: black;
+}
+
+.navbar .separator {
+    font-size: 40px;
+    color: #ccc;
+    margin: 0px 15px;
+}
+
+
+.navbar .sweet-bakery:hover {
+    background-color: #e65c50;
+}
+ 
+.btn{
+ 	height: 30px;
+	width:  90px;
+	border-radius: 5px;
+	background-color: #ff6f61;
+	font-text: bold;
+	position: absolute;
+	top: 650%;
+ 	right: 2%;
+}
+.btn1{
+	
+  
+ 	height: 40px;
+	width:  100px;
+  justify-content: space-between;
+    align-items: center;
+	border-radius: 5px;
+	background-color: chocolate;
+	font-text: bold;
+	color: white;
+font-size: 20px;
+	  padding: 10px;
+	position: absolute;
+	top: 190%;
+ 	right: 20%;
+}	
+
+
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+
+
+
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: white;
+           
+        }
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: #333;
+        }
+         section {
+            padding: 20px;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 40px; /* Increased spacing between sections */
+        }
+        .container {
+            width: 100%;
+            margin: 0 auto;
+        }
+      
+.image-container {
+margin: 43px;
+  gap: 25px;
+  float: left; /* Remove this property */
+  width: calc(20% - 35px); /* Adjust the width as needed */
+  box-sizing: border-box;
+  display: flex; /* Add this property */
+   /* Align images to the right */
+margin-left: 55px;
+
+  
+  transform: translateY(180px);
+  transform: translateX(135px);
+
+
+position: relative;
+    top: 70px;
+
+}
+
+
+
+ .image-container img {
+        width: 100%; /* Ensures images fill their containers */
+         /* Removes any extra space below images */
+display: flex;
+gap: 40px;
+ position: relative;
+    top: 23px;
+left: -70%;
+
+
+	
+    }
+
+
+  .slider {
+            position: relative;
+            width: 100%;
+            max-width: 1300px;
+	max-height: 450px;
+            margin: auto;
+            overflow: hidden;
+            border: 2px solid #ddd;
+transform: translateY(240px);
+        }
+        .slider-wrapper {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .slider img {
+            width: 25%;
+            display: block;
+margin: 2px;
+border: 4px solid chocolate;
+        }
+        .slider .buttons {
+            position: absolute;
+            top: 80%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+        .slider .prev, .slider .next {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+#feedbackBtn {
+    position: relative;
+    top: -100px;
+    left: 50px;
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#feedbackBtn:hover {
+    background-color: purple;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <header>
+     <img src="C:\Users\hp\Pictures\WebPageImage\germanbread-50972f8f4327cbc98d7b363f716d0c127c0ccdf0-s1100-c15.jpg" width="1400" height="700" bg-color="white">
+    
+    
+
+	 <div class="navbar">
+            <div class="logo">
+                <img src="C:\Users\hp\Downloads\logo3.jfif" alt="Baker's Kitchen Logo">
+            </div>
+
+
+   
+
+
+ 
+<nav> 
+
+ <ul>
+ 
+        <a href="#home" style="color: black";>Home</a>
+        <a href="#about" style="color: black";>About Us</a>
+        <a href="#menu" style="color: black";>Menu</a>
+        <a href="#gallery" style="color: black";>Gallery</a>
+        <a href="#feedback" style="color: black";>Feedback</a>
+        <a href="#contact" style="color: black";>Contact</a>
+  <li class="separator">|</li>
+
+
+      <div class="social-media">
+   
+                <a href="#"><i class="fa fa-facebook-f"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+            </div>
+</ul>
+ </nav>
+</section>
+
+
+       
+   
+</header>
+    <section id="about" class="container"  style="margin-bottom: 600px;">
+
+        <h2 style="position: absolute; left: 60%; top: 130%; align-items: center";><i>Welocme to Baker Kitchen</h2>
+
+<img src="C:\Users\hp\Pictures\WebPageImage\desktop-wallpaper-tea-breakfast-dessert-baking-cherry-bakery-meal-pie-rolls-patisserie-cuisine-sweetness-dish-flavor-baked-goods-snack-food-batch-1920x1080-patisserie.jpg" height="250px" width="450px" style="position: absolute; top: 145%; left: 10%; align-items: center; border-radius: 40px; border: 2px solid chocolate;">
+
+       
+ <p style="position: absolute; left: 53%; top: 143%; align-items: center; padding: 0px 80px;">Welcome to Baker's Kitchen, your go-to destination for all things sweet and delightful. We specialize in creating mouth-watering cakes, delectable desserts, and refreshing ice creams, along with a variety of other bakery items. Our cakes are perfect for any occasion, from birthdays to anniversaries, and come in a range of delicious flavors. Indulge in our sweet treats like brownies, cupcakes, and cheesecakes, or cool off with our homemade ice creams in both classic and unique flavors. We also offer freshly baked breads and pastries to start your day right. At Baker's Kitchen, we use only the highest quality ingredients to ensure every bite is a delightful experience. Visit us today to enjoy our cozy atmosphere and delicious creations, or place an order for takeout and delivery. Baker's Kitchen – where every bite is a delight!</p>
+   <a href="#about" class="btn1">About Us</a>
+
+ </section>
+
+    <section id="menu" class="container" style="margin-bottom: 1230px;">
+
+        <h2 style="position: absolute; left: 40%; top: 220%;"><u>Our Specialties</h2>
+        <p style="position: absolute; left: 34%; top: 227%;"><i>Fresh Bakery Items With the Finest Ingredients.</i></p>
+   <div class="image-container">
+<img src="C:\Users\hp\Pictures\WebPageImage\thumb-1920-911264.jpg" width="200px" height="250px" position: absolute; left: 10%; top: 290%; margin: 10px;">
+ <h4 style="position: absolute; left: -70%; top: 103%; color: brown; padding: 0px 2px;">chocolate pastries</h4>
+<br><h5 style="position: absolute; left: -70%; top: 100%; color: brown;"><br><br>Price    50Rs</h5>
+<a href="#order" style="color: white; position: absolute; left: 1%; top: 120%; padding: 5px 12px; background-color: tomato; border-radius: 12px;">Order</a>
+
+</div>
+
+
+
+
+<div class="image-container">
+
+    <img src="C:\Users\hp\Pictures\WebPageImage\Cherry-Ice-Cream.jpg" width="200px" height="250px" position: absolute; left: 20%; top: 300%; display: flex; margin: 20px;">
+    
+ <h4 style="position: absolute; left: -70%; top: 103%; color: brown;">Blueberry Icecream</h4>
+<br><h5 style="position: absolute; left: -70%; top: 100%; color: brown;"><br><br>Price    50Rs</h5>
+<a href="#order" style="color: white; position: absolute; left: 1%; top: 120%; padding: 5px 12px; background-color: tomato; border-radius: 12px;">Order</a>
+
+</div>
+
+
+
+<div class="image-container">
+    <img src="C:\Users\hp\Pictures\WebPageImage\lemon pie.jpg" width="200px" height="250px">
+   
+<h4 style="position: absolute; left: -70%; top: 103%; color: brown;">Lemon Tart</h4>
+<br><h5 style="position: absolute; left: -70%; top: 100%; color: brown;"><br><br>Price    50Rs</h5>
+<a href="#order" style="color: white; position: absolute; left: 1%; top: 120%; padding: 5px 12px; background-color: tomato; border-radius: 12px;">Order</a>
+
+</div>
+
+
+
+<div class="image-container">
+
+<img src="C:\Users\hp\Pictures\WebPageImage\lovely-pastries-wallpaper-1.jpg" width="200px" position: absolute; top: 200%; height="250px" display: flex; flex-wrap: wrap;  margin: 10px;>
+
+<h4 style="position: absolute; left: -70%; top: 103%; color: brown;">Pencake</h4>
+<br><h5 style="position: absolute; left: -70%; top: 100%; color: brown;"><br><br>Price    50Rs</h5>
+<a href="#order" style="color: white; position: absolute; left: 1%; top: 120%; padding: 5px 12px; background-color: tomato; border-radius: 12px;">Order</a>
+
+</div>
+
+
+
+<div class="image-container">
+
+<img src="C:\Users\hp\Pictures\WebPageImage\doughnuts.jfif" width="200px" position: absolute; top: 200%; height="250px" display: flex; flex-wrap: wrap;  margin: 10px;>
+
+<h4 style="position: absolute; left: -70%; top: 103%; color: brown;">Doughnuts</h4>
+<br><h5 style="position: absolute; left: -70%; top: 100%; color: brown;"><br><br>Price    50Rs</h5>
+<a href="#order" style="color: white; position: absolute; left: 1%; top: 120%; padding: 5px 12px; background-color: tomato; border-radius: 12px;">Order</a>
+
+
+</div>
+
+
+<div class="image-container">
+
+<img src="C:\Users\hp\Pictures\WebPageImage\cinnamon muffies.jpg" width="200px" position: absolute; top: 200%; height="250px" display: flex; flex-wrap: wrap;  margin: 10px;>
+
+<h4 style="position: absolute; left: -70%; top: 103%; color: brown;">Cinnamon Muffin</h4>
+<br><h5 style="position: absolute; left: -70%; top: 100%; color: brown;"><br><br>Price    50Rs</h5>
+<a href="#order" style="color: white; position: absolute; left: 1%; top: 120%; padding: 5px 12px; background-color: tomato; border-radius: 12px;">Order</a>
+
+</div>
+
+
+
+<div class="image-container">
+
+<img src="C:\Users\hp\Pictures\WebPageImage\apple pie.jfif" width="200px" position: absolute; top: 200%; height="250px" display: flex; flex-wrap: wrap;  margin: 10px;>
+
+<h4 style="position: absolute; left: -70%; top: 103%; color: brown;">Apple Pie</h4>
+<br><h5 style="position: absolute; left: -70%; top: 100%; color: brown;"><br><br>Price    50Rs</h5>
+<a href="#order" style="color: white; position: absolute; left: 1%; top: 120%; padding: 5px 12px; background-color: tomato; border-radius: 12px;">Order</a>
+
+</div>
+
+
+
+<div class="image-container">
+
+<img src="C:\Users\hp\Pictures\WebPageImage\no bake and vegan cheesecake.jpg" width="200px" position: absolute; top: 200%; height="250px" display: flex; flex-wrap: wrap;  margin: 10px;>
+
+<h4 style="position: absolute; left: -70%;  top: 103%;color: brown;">Vegan Cheesecake</h4>
+<br><h5 style="position: absolute; left: -70%;  top: 100%; color: brown;"><br><br>Price    50Rs</h5>
+<a href="#order" style="color: white; position: absolute; left: 1%; top: 120%; padding: 5px 12px; background-color: tomato; border-radius: 12px;">Order</a>
+
+</div>
+
+
+
+
+<div class="image-container">
+
+<img src="C:\Users\hp\Pictures\WebPageImage\OIP (3).jfif" width="200px" position: absolute; top: 200%; height="250px" display: flex; flex-wrap: wrap;  margin: 10px;>
+
+<h4 style="position: absolute; left: -70%; top: 103%; color: brown;">Cookies</h4>
+<br><h5 style="position: absolute; left: -70%; top: 100%; color: brown;"><br><br>Price    50Rs</h5>
+<a href="#order" style="color: white; position: absolute; left: 1%; top: 120%; padding: 5px 12px; background-color: tomato; border-radius: 12px;">Order</a>
+
+
+
+</div>
+
+
+<div class="image-container">
+
+<img src="C:\Users\hp\Pictures\WebPageImage\vanilla tart.jpg" width="200px" position: absolute; top: 200%; height="250px" display: flex; flex-wrap: wrap;  margin: 10px;>
+
+<h4 style="position: absolute; left: -70%; top: 103%; color: brown;">Vanilla Tart</h4>
+<br><h5 style="position: absolute; left: -70%; top: 100%; color: brown;"><br><br>Price    50Rs</h5>
+<a href="#order" style="color: white; position: absolute; left: 1%; top: 120%; padding: 5px 12px; background-color: tomato; border-radius: 12px;">Order</a>
+
+
+
+</div>
+
+
+<div class="image-container">
+
+<img src="C:\Users\hp\Pictures\WebPageImage\wp3980263.jpg" width="200px" position: absolute; top: 200%; height="250px" display: flex; flex-wrap: wrap;  margin: 10px;>
+
+<h4 style="position: absolute; left: -70%; top: 103%; color: brown;">Pastries Tart</h4>
+<br><h5 style="position: absolute; left: -70%; top: 100%; color: brown;"><br><br>Price    50Rs</h5>
+<a href="#order" style="color: white; position: absolute; left: 1%; top: 120%; padding: 5px 12px; background-color: tomato; border-radius: 12px;">Order</a>
+
+
+
+</div>
+
+
+
+<div class="image-container">
+
+<img src="C:\Users\hp\Pictures\WebPageImage\chocolate cool whip cheesecake.jpg" width="200px" position: absolute; top: 200%; height="250px" display: flex; flex-wrap: wrap;  margin: 10px;>
+
+<h4 style="position: absolute; left: -70%; top: 103%; color: brown;">Cool Whip Cheesecake Tart</h4>
+<br><h5 style="position: absolute; left: -70%; top: 100%; color: brown;"><br><br>Price    50Rs</h5>
+<a href="#order" style="color: white; position: absolute; left: 1%; top: 120%; padding: 5px 12px; background-color: tomato; border-radius: 12px;">Order</a>
+
+
+
+</div>
+
+ </section>
+
+
+    <section id="gallery" class="container" style="margin-bottom: 400px;">
+        <h2 style="position: absolute; left: 50%; top: 430%;">Gallery</h2>
+        <p style="position: absolute; left: 34%; top: 438%;">Explore our services and offerings designed to meet all your web development needs.</p>
+    
+
+ <div class="slider">
+    <div class="slider-wrapper">
+        <img src="C:\Users\hp\Pictures\WebPageImage\269176-chocolate-brownie-with-strawberries.jpg" alt="Image 1">
+        <img src="C:\Users\hp\Pictures\WebPageImage\blue berry pie2.jpg" alt="Image 2">
+        <img src="C:\Users\hp\Pictures\WebPageImage\bread basket good for health.png" alt="Image 3">
+   	<img src="C:\Users\hp\Pictures\WebPageImage\lemon tart2.jfif" alt="image lemon tart">
+	<img src="C:\Users\hp\Pictures\WebPageImage\fruit tart.jpg" alt="image frui tart">
+	<img src="C:\Users\hp\Pictures\WebPageImage\maringue pie2.jpg" alt="image maringue pie">
+	<img src="C:\Users\hp\Pictures\WebPageImage\chocolate cool whip cheesecake.jpg" alt="image cool whip cheesecake">
+	<img src="C:\Users\hp\Pictures\WebPageImage\cake.jpg" alt="image cake">
+	<img src="C:\Users\hp\Pictures\WebPageImage\OIP (4).jfif" alt="image pencake">
+	<img src="C:\Users\hp\Pictures\WebPageImage\OIP (8).jfif" alt="cookies">
+	<img src="C:\Users\hp\Pictures\WebPageImage\OIP (10).jfif" alt="muffin">
+
+
+ </div>
+    <div class="buttons">
+        <button class="prev" onclick="changeSlide(-1)">❮</button>
+        <button class="next" onclick="changeSlide(1)">❯</button>
+    </div>
+</div>
+
+<script>
+    let currentIndex = 0;
+    const slides = document.querySelectorAll('.slider img');
+    const totalSlides = slides.length;
+    const slideWidth = slides[0].clientWidth;
+
+    function changeSlide(direction) {
+        currentIndex = (currentIndex + direction + totalSlides) % totalSlides;
+        const offset = -currentIndex * slideWidth;
+        document.querySelector('.slider-wrapper').style.transform = `translateX(${offset}px)`;
+    }
+
+    window.addEventListener('resize', () => {
+        slideWidth = slides[0].clientWidth;
+        changeSlide(0); // Adjust position on window resize
+    });
+</script>
+
+
+</section>
+
+    <section id="feedback" class="container">
+        <h2 style="text-align: center;">Feedback</h2>
+       <p style="text-align: center;">We value your feedback. Let us know what you think about our services.
+   <img src="C:\Users\hp\Downloads\feedback2.jpg" height="50%" width="100%">
+
+<button id="feedbackBtn">Feedback</button>
+
+    <div id="feedbackModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Feedback Form</h2>
+            <form id="feedbackForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="feedback">Feedback:</label>
+                <textarea id="feedback" name="feedback" rows="4" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+</section>
+
+    <section id="contact" class="container">
+        <h2 style="text-align: center;">CONTACT US</h2>
+        <p style="text-align: center;">c-20, Optus Society Sector 7 <br> Gurugram, Gurugram City <br>     <br>Hours: Opens 6-AM To 10-PM <br> Monday to Monday <br> Phone: (0124) ......... </p>
+
+</section>
+    
+   
+
+<script>
+let mybutton = document.getElementById("myBtn");
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    var modal = document.getElementById("feedbackModal");
+    var btn = document.getElementById("feedbackBtn");
+    var span = document.getElementsByClassName("close")[0];
+
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+    document.getElementById("feedbackForm").onsubmit = function(event) {
+        event.preventDefault();
+        alert("Feedback submitted! Thank you.");
+        modal.style.display = "none";
+    }
+});
+
+</script>
+
+</body>
+</html>
